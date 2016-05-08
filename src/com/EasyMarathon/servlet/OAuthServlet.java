@@ -44,12 +44,10 @@ public class OAuthServlet extends HttpServlet
 					openId);
 
 			// 设置要传递的参数
-			
-			//session.setAttribute("snsUserInfo", snsUserInfo);
 			session.setAttribute("snsUserInfo", snsUserInfo);
 		}
 		// 跳转到index.jsp
-		System.out.println("进入GoUploadPicServlet。。");
+		System.out.println("进入GoUploadPicServlet...");
 		request.getRequestDispatcher("GoUploadPicServlet").forward(request, response);
 	}
 }

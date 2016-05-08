@@ -65,7 +65,7 @@ public class GoUploadPicServlet extends HttpServlet {
 		request.setAttribute("event", event);
 		HttpSession session = request.getSession();
 		request.setAttribute("snsUserInfo", session.getAttribute("snsUserInfo"));
-		request.getRequestDispatcher("bg/uploadPicforUser.jsp").forward(request,response);
+		request.getRequestDispatcher("uploadPicforUser.jsp").forward(request,response);
 	}
 
 }

@@ -26,12 +26,6 @@
 	<% 
 	Map<Integer, String> events=new HashMap<Integer, String>();
 	Map<Integer, String> event=(Map<Integer, String>)request.getAttribute("event");
-	
-	
-	/* events.put(1,"杭州马拉松");
-	events.put(2,"宁波马拉松");
-	events.put(3,"温州马拉松"); */
-	
 		// 获取由OAuthServlet中传入的参数
 		SNSUserInfo user = (SNSUserInfo)session.getAttribute("snsUserInfo"); 
 		/* System.out.println(user.getCity());
@@ -48,31 +42,32 @@
 		<tr><td>城市</td><td><%=user.getCity()%></td></tr>
 		<tr><td>头像</td><td><%=user.getHeadImgUrl()%></td></tr>
 		<tr><td>特权</td><td><%=user.getPrivilegeList()%></td></tr>
-	</table> --%>
+	</table>  --%>
 
- 	<form enctype="multipart/form-data" action="uploadPicforUser" method="post">
-<!-- 	<form action="bg/uploadPicforUser" method="post">  -->
+ 	<form enctype="multipart/form-data" action="UserUpload" method="post">
 		<div class="htmleaf-container" style="min-height: 300px">
 			<div class="container kv-main">
- 				<br> <input id="file-0a" class="file" type="file" name="picture.file"> <br>  
+ 				<br> <input id="file-0" class="file" type="file" name="picture"> <br>  
 
 				<div class="form-group">
-<div style="display:none">
+					<%-- <div style="display:none">
 						<input name="wechatID" type="hidden" value="<%=user.getOpenId()%>" />
-		</div>
+					</div> --%>
 					<label for="name">赛事所在地</label> <select class="form-control"
 						name="eventID">	
-						<%
-						for (Map.Entry<Integer, String> entry : event.entrySet()) {  						  
-							String eventName= entry.getValue();  		
-							int eventID1= entry.getKey();
-							String aa=Integer.toString(eventID1);
-							/* System.out.println(eventID1); */						
-			         %> 
-						 <option value="<%=aa %>"><%=eventName %></option> 
+						<option value="1">01</option> 
+						<option value="2">02</option> 
+						<%-- <%
+							for (Map.Entry<Integer, String> entry : event.entrySet()) {  						  
+								String eventName= entry.getValue();  		
+								int eventID1= entry.getKey();
+								String aa=Integer.toString(eventID1);
+								/* System.out.println(eventID1); */						
+			         	%> 
+							<option value="<%=aa %>"><%=eventName %></option> 
 						<%
 							}
-			         %>
+			         	%> --%>
 					</select> 
 				</div>
 
@@ -88,11 +83,12 @@
 	<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"	type="text/javascript"></script> 	
 	<script>
 	    $("#file-0").fileinput({
-	        'allowedFileExtensions' : ['jpg', 'png','gif'],
+	        'allowedFileExtensions' : ['jpg','jpeg', 'png','gif'],
+	        maxFilesNum: 10,
 	    });
 	    $("#file-1").fileinput({
 	        uploadUrl: '#', // you must set a valid URL here else you will get an error
-	        allowedFileExtensions : ['jpg', 'png','gif'],
+	        allowedFileExtensions : ['jpeg', 'jpg', 'png','gif'],
 	        overwriteInitial: false,
 	        maxFileSize: 1000,
 	        maxFilesNum: 10,

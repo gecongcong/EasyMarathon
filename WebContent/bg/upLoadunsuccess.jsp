@@ -8,14 +8,14 @@
   <title>上传失败</title>
   <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <link rel="stylesheet" href="PersonCenter/js/jPlayer/jplayer.flat.css" type="text/css" />
-  <link rel="stylesheet" href="PersonCenter/css/bootstrap.css" type="text/css" />
-  <link rel="stylesheet" href="PersonCenter/css/animate.css" type="text/css" />
-  <link rel="stylesheet" href="PersonCenter/css/font-awesome.min.css" type="text/css" />
-  <link rel="stylesheet" href="PersonCenter/css/font-awesome-ie7.min.css">
-  <link rel="stylesheet" href="PersonCenter/css/simple-line-icons.css" type="text/css" />
-  <link rel="stylesheet" href="PersonCenter/css/font.css" type="text/css" />
-  <link rel="stylesheet" href="PersonCenter/css/app.css" type="text/css" />  
+  <link rel="stylesheet" href="bg/PersonCenter/js/jPlayer/jplayer.flat.css" type="text/css" />
+  <link rel="stylesheet" href="bg/PersonCenter/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="bg/PersonCenter/css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="bg/PersonCenter/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="bg/PersonCenter/css/font-awesome-ie7.min.css">
+  <link rel="stylesheet" href="bg/PersonCenter/css/simple-line-icons.css" type="text/css" />
+  <link rel="stylesheet" href="bg/PersonCenter/css/font.css" type="text/css" />
+  <link rel="stylesheet" href="bg/PersonCenter/css/app.css" type="text/css" />  
     <!--[if lt IE 9]>
     <script src="js/ie/html5shiv.js"></script>
     <script src="js/ie/respond.min.js"></script>
@@ -56,12 +56,12 @@
   <!-- Bootstrap -->
   <script src="PersonCenter/js/bootstrap.js"></script>
   <!-- App -->
-  <script src="PersonCenter/js/app.js"></script>  
-  <script src="PersonCenter/js/slimscroll/jquery.slimscroll.min.js"></script>
-    <script src="PersonCenter/js/app.plugin.js"></script>
-  <script type="text/javascript" src="PersonCenter/js/jPlayer/jquery.jplayer.min.js"></script>
-  <script type="text/javascript" src="PersonCenter/js/jPlayer/add-on/jplayer.playlist.min.js"></script>
-  <script type="text/javascript" src="PersonCenter/js/jPlayer/demo.js"></script>
+  <script src="bg/PersonCenter/js/app.js"></script>  
+  <script src="bg/PersonCenter/js/slimscroll/jquery.slimscroll.min.js"></script>
+  <script src="bg/PersonCenter/js/app.plugin.js"></script>
+  <script type="text/javascript" src="bg/PersonCenter/js/jPlayer/jquery.jplayer.min.js"></script>
+  <script type="text/javascript" src="bg/PersonCenter/js/jPlayer/add-on/jplayer.playlist.min.js"></script>
+  <script type="text/javascript" src="bg/PersonCenter/js/jPlayer/demo.js"></script>
 
 </body>
 </html>
